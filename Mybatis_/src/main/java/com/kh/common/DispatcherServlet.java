@@ -55,6 +55,7 @@ public class DispatcherServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 		String uri = request.getRequestURI(); ///ex)/Mybatis_/student/studentEnroll.do
 		int beginIndex = request.getContextPath().length(); //ex)9
 		String url = uri.substring(beginIndex); //ex)/student/studentEnroll.do
