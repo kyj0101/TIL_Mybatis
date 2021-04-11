@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="student">
+
+  <insert id="insertStudent" parameterType="hashmap">
+   	insert into 
+   		student
+	values (
+  		seq_student_no.nextval, 
+  		#{name}, 
+  		#{tel}
+  		)   		
+  </insert>
+
+</mapper>
